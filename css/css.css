@@ -22,12 +22,13 @@
 }*/
 
 /* set section promo*/
+
 .promo {
   background-image: url("../media/background-section-promo.jpg");
   background-size: cover;
   height: 100vh;
+  padding-bottom: 142px;
 }
-
 
 header {
   display: flex; 
@@ -106,7 +107,7 @@ header .social-header li:nth-child(2) {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 125px auto 149px;
+  margin: 125px auto 0;
   align-items: center;
 }
 
@@ -117,6 +118,7 @@ h1 {
   color: rgba(255, 255, 255, 0.92);
   text-align: center;
   margin-bottom: 34px;
+  width: 70%;
 }
 
 /*set buttons*/
@@ -133,7 +135,8 @@ h1 {
   text-transform: uppercase;
   align-items: center;
   justify-content: center;
-   
+  color: #fff;
+  font-family: "Lato";   
 }
 
 .contenier-buton a:first-child {
@@ -154,110 +157,109 @@ h1 {
   box-shadow: inset 0 0 50px 0 rgba(1, 1, 1, 0.14);
   background-image: linear-gradient(to top, #010101, var(--white));
   background-image: url("../media/background-about.png"); 
+  padding: 58px 0 27px 0;
 }
 
 .row {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 
 .block_about {
   display: flex;
   flex: 0 1 35%;
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  margin: 0 17px 0 37px
 }
 
 .block_about h2 {
   color: #cc9900;
   font-size: 36px;
-  line-height: 0.67;
-  letter-spacing: 1px;
+  margin-top: 44px;
 }
 
-.block_about p {
+section .divider-about {
+  margin-top: 17px
+}
+
+section .block_about p {
   font-family: Lato;
   font-size: 16px;
   text-align: center;
   line-height: 1.5;
   color: #4c4c4c;
+  margin-top: 27px;
 }
 
-/*.dish {
-  margin: 20px 0;
-}*/
+section .block_about .cheef {
+  margin: 49px 0 0 67px;
+}
 
 /*set section Ingridients*/
 
 .ingridients {
-  display: flex;
   background: url(../media/background-section-ingridients.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  color: #eeeeef;
+  background-size: cover; 
 }
 
-.ingridients .container-row {
-  justify-content: flex-end;
+ .ingridients {
+   display: flex;
 }
 
-.fine_ingridients {
+.fine-ingridients {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 570px;
-  height: 72vh;
   background-color: rgba(0, 0, 0, 0.702);
+  padding: 83px 81px;
+  width: 570px;
+  box-sizing: border-box;
 }
 
-.fine_ingridients h2 {
-  font-size: 39px;
-  margin-top: 72px;
-  letter-spacing: 2px;
-  margin-right: 23px;
+.fine-ingridients h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
 }
 
-.fine_ingridients img {
-  margin-top: 16px;
+.fine-ingridients img {
+  margin-bottom: 30px;
 }
 
-.fine_ingridients p {
+.fine-ingridients p {
   font-family: Lato;
   font-size: 16px;
   line-height: 1.5;
-  width: 75%;
-  margin-top: 25px;
   text-align: center;
+  margin-bottom: 76px;
 }
 
-.ingridients_img {
+.ingridients-img {
   display: flex;
   flex-direction: row;
-  margin-top: 73px;
 }
 
-.ingridients_img div {
+.ingridients-img div {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   box-shadow: 0 0 1px 5px rgba(255, 255, 255, 0.2);
 }
 
-.ingridients_img div:nth-child(1) {
+.ingridients-img div:nth-child(1) {
   background-image: url(../media/wheat-section-promo.jpg);
   background-position: -38px -27px;
 }
 
-.ingridients_img div:nth-child(2) {
+.ingridients-img div:nth-child(2) {
   background-image: url(../media/peper.jpg);
   background-position: -41px -51px;
   margin: 0px 41px;
 }
 
-.ingridients_img div:nth-child(3) {
+.ingridients-img div:nth-child(3) {
   background-image: url(../media/bread.jpg);
   background-position: -43px -14px;
 }
