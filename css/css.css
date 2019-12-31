@@ -204,11 +204,10 @@ section .block-about .cheef {
   margin: 49px 0 0 67px;
 }
 
-/*/*=================set section Ingridients/*=================*/
+/*=================set section Ingridients/*=================*/
 
 .ingridients {
   background: url(../media/background-section-ingridients.jpg);
-  background-size: cover;
   padding: 100px 0;
 }
 
@@ -273,103 +272,49 @@ section .block-about .cheef {
   background-position: -43px -14px;
 }
 
-/*set section menu*/
-
+/*=================set section menu=================*/
 .section-menu {
-  display: flex;
-  background: url(../media/background-section-menu.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100%;
-  color: #cc9900;
+  box-shadow: inset 0px 0px 50px 0px rgba(1, 1, 1, 0.14);
+  background: linear-gradient(
+    135deg,
+    rgba(32, 90, 91, 0.09) 0%,
+    rgba(41, 137, 216, 0.09) 50%,
+    rgba(32, 124, 202, 0.09) 51%,
+    rgba(255, 255, 255, 0.09) 100%
+  );
+  background-image: url("../media/background-section-menu.png");
 }
 
-.section-menu .container-row {
+.section-menu .container {
+  display: flex;
   justify-content: space-around;
+  border: 1px solid red;
 }
 
-.first-column {
+.section-menu .first-column,
+.section-menu .second-column {
   display: flex;
-  height: 60%;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-}
-
-.second-column {
-  display: flex;
-  height: 60%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-ol {
-  list-style: none;
+  flex-basis: 50%;
 }
 
 .section-menu h2 {
   font-size: 36px;
+  color: #cc9900;
 }
 
-.dish-name {
+.section-menu .dish-name {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid #c89f2d;
   font-size: 21px;
-  line-height: 24px;
-  text-align: justify;
+  color: #cc9900;
 }
 
-.section-menu p {
+.section-menu ul p {
   font-family: "Lato";
-  font-size: 16px;
-  line-height: 40px;
-  color: #4c4c4c;
 }
-
-.salads li:nth-child(3)::before {
-  content: "Special";
-  display: block;
-  width: 69px;
-  height: 22px;
-  background: url(../media/background-special.png);
-  position: absolute;
-  left: 322px;
-  bottom: 40px;
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 1.71;
-  color: #f8fafa;
-  text-align: center;
-}
-
-.special {
-  border: solid 1px #c89f2d;
-  position: relative;
-  padding: 5px;
-}
-
-.special::before {
-  content: "Special";
-  display: block;
-  width: 69px;
-  height: 22px;
-  background: url(../media/background-special.png);
-  position: absolute;
-  left: 82.1%;
-  bottom: 100%;
-  font-family: Lato;
-  font-size: 14px;
-  line-height: 1.71;
-  color: #f8fafa;
-  text-align: center;
-}
-
-.line {
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #cc9900;
-}
-
 /*set section reviews*/
 
 .reviews {
