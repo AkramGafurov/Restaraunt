@@ -283,13 +283,12 @@ section .block-about .cheef {
     rgba(255, 255, 255, 0.09) 100%
   );
   background-image: url("../media/background-section-menu.png");
-  padding: 73px 0 60px;
+  padding: 73px 115px 58px 113px;
 }
 
 .section-menu .container {
   display: flex;
   justify-content: space-between;
-  padding: 0 92px 0 88px;
 }
 
 .section-menu .first-column,
@@ -308,18 +307,18 @@ section .block-about .cheef {
   width: 100%;
 }
 .section-menu ul li {
-  margin-bottom: 41px;
+  margin-bottom: 40px;
 }
 
 .section-menu h2 {
   font-size: 36px;
   color: #cc9900;
-  margin-top: 29px;
   margin-bottom: 17px;
+  margin-top: 30px;
 }
 
 .section-menu img {
-  margin-bottom: 31px;
+  margin-bottom: 30px;
 }
 
 .section-menu .dish-name {
@@ -329,12 +328,29 @@ section .block-about .cheef {
   font-size: 21px;
   color: #cc9900;
   padding-bottom: 8px;
-  margin-bottom: 12px;
+  margin-bottom: 11px;
 }
 
 .section-menu ul p {
   font-family: "Lato";
 }
+
+.special {
+  display: inline-block;
+  width: 455px;
+  padding: 10px;
+  border: 1px solid #cc9900;
+  position: relative;
+  right: 10px;
+  box-sizing: border-box;
+  margin: -11px 0 30px 0;
+}
+
+/*.section-menu .special {
+  border: solid 1px #c89f2d;
+  box-sizing: border-box;
+
+}*/
 
 /*set section reviews*/
 
