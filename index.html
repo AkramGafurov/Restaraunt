@@ -95,7 +95,7 @@
               <h2>Appetisers</h2>
               <img src="./media/divider-section-menu.png" alt="logo of divider">
               <ul>
-                <li class="special">
+                <li>
                   <span class="dish-name">Tzatsiki <span>$3.99</span></span>
                   <p>Refreshing traditional cucumber and garlic yoghurt dip.</p>
                 </li>
@@ -177,28 +177,32 @@
 
         <!--make section reviews-->
         <section class="reviews" id="reviews">
-          <section class="reviews-content">
-            <h2>Guest Reviews</h2>
-            <img src="./media/divider-section-ingredients.png" alt="logo of divider">
-            <p class="reviews-text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
-            </p>
-            <p class="reviews-text-second">- food inc, New York</p>
-          </section>
+          <div class="container">
+            <section class="reviews-content">
+              <h2>Guest Reviews</h2>
+              <img src="./media/divider-section-ingredients.png" alt="logo of divider">
+              <p class="reviews-text">If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food, delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out!
+              </p>
+              <p class="reviews-text-second">- food inc, New York</p>
+            </section>
+          </div>
+          
         </section>
 
         <!--make section reservation-->
-        <section class="reservation" id="reservation">
-        <div class="container-row">
+      <section class="reservation" id="reservation">
+        <div class="container">
           <section class="img-reservation">
             <img src="./media/meat-section-reservation.jpg" alt="picture of meat dish">
             <img src="./media/chery-section-reservation.jpg" alt="picture of chery desert">
           </section>
           <section class="reservation-content">
             <h2>Just the right food</h2>
-            <img src="./media/divider-section-menu.png" alt=" logo of devider">
+            <img class="divider" src="./media/divider-section-menu.png" alt=" logo of devider">
             <p>If you’ve been to one of our restaurants, you’ve seen – and tasted – what keeps our customers coming back for more. Perfect materials and freshly baked food.
              </p>
               <p> Delicious Lambda cakes,  muffins, and gourmet coffees make us hard to resist! Stop in today and check us out! Perfect materials and freshly baked food.</p>
+
             <form action="#" method="POST">
               <section class="form-fields">
 
@@ -206,13 +210,13 @@
                   <label for="user-name">Name</label>
                   <input type="text" id="user-name" name="user-name" placeholder="your name *" pattern="[A-Za-z]{2,}" required>
   
-                  <label for="user-email">Email</label>
-                  <input type="email" id="user-email" name="user-email" placeholder="your email *" required>
+                  <label for="date">Date</label>
+                  <input type="date" id="date" name="date"  required>
                 </section>
                   
                 <section class="form-second-column">
-                  <label for="date">Date</label>
-                  <input type="date" id="date" name="date"  required>
+                  <label for="user-email">Email</label>
+                  <input type="email" id="user-email" name="user-email" placeholder="your email *" required>
   
                   <label for="day">Party number</label>
                   <select name="party number"  >
@@ -230,11 +234,11 @@
             </form>
           </section>
         </div>  
-        </section>
+      </section>
 
           <!--make section footer-->
         <footer>
-          <section class="container-row">
+          <section class="container">
             <section class="footer-first-column">
               <h2>About Us</h2>
               <img src="./media/divider-section-footer.png" alt="logo of divider">
