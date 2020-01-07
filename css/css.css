@@ -328,6 +328,21 @@ section .block-about .cheef {
   margin: -11px 0 30px 0;
 }
 
+.special::after {
+  content: "Special";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 69px;
+  height: 22px;
+  position: absolute;
+  top: -22px;
+  right: -1px;
+  background-image: url(../media/background-special.png);
+  color: #ffffff;
+  font-family: "lato";
+}
+
 /*set section reviews*/
 
 .reviews {
@@ -607,6 +622,11 @@ header .mobile-menu {
     padding: 0 20px;
   }
 
+  .reservation .reservation-content h2 {
+    font-size: 36px;
+    margin-top: 20px;
+  }
+
   .reservation .img-reservation {
     max-width: 560px;
     width: 100%;
@@ -819,6 +839,7 @@ header .mobile-menu {
   .reviews {
     padding: 20px 0;
   }
+
   .reviews .reviews-content {
     padding: 40px;
     width: 90%;
@@ -827,7 +848,8 @@ header .mobile-menu {
   .reviews-content .reviews-text {
     width: 100%;
     margin: 24px 0;
-
+    font-size: 16px;
+    line-height: 1.5;
     text-align: center;
   }
 
@@ -837,14 +859,60 @@ header .mobile-menu {
 
   /*set section reservation*/
 
+  .reservation {
+    padding: 50px 0;
+  }
+
   /*set section footer*/
+
+  footer {
+    padding: 30px 0 50px;
+  }
+
   footer .container {
     flex-direction: column;
     align-items: center;
   }
+
+  footer .container h2 {
+    margin-top: 20px;
+  }
 }
-/*font-family: "Lato";
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    */
+
+@media all and (max-width: 413px) and (min-width: 320px) {
+  /*set section ingridients*/
+  .ingridients-img {
+    display: none;
+  }
+  .ingridients .fine-ingridients p {
+    margin-bottom: 0;
+  }
+
+  .ingridients .fine-ingridients {
+    padding: 10px;
+  }
+  /*set section reservation*/
+
+  .reservation .img-reservation {
+    display: none;
+  }
+  .reservation .reservation-content h2 {
+    font-size: 36px;
+    line-height: 0.67;
+    margin-top: 20px;
+    text-align: center;
+    line-height: 1.2;
+    margin-top: 0;
+  }
+
+  /*set section reviews*/
+
+  .reviews .reviews-content {
+    padding: 10px;
+  }
+
+  /*set section footer*/
+  .footer-first-column {
+    display: none;
+  }
+}
