@@ -138,9 +138,9 @@ h1 {
 /*set the section About*/
 
 .about {
-  background-image: url("../media/background-aboutt.png");
+  background-image: url("../media/background-about.png");
   box-shadow: inset 0 0 50px 0 rgba(75, 42, 42, 0.14);
-  background: url("../media/plate-section-about.png") no-repeat 582px 54px;
+  background: url("../media/plate-section-about.png") no-repeat 543px 54px;
   /*background: linear-gradient(
     135deg,
     rgba(1, 1, 1, 0.09) 0%,
@@ -163,7 +163,7 @@ h1 {
 .block-about h2 {
   color: #cc9900;
   font-size: 36px;
-  margin-top: 44px;
+  margin-top: 45px;
 }
 
 section .divider-about {
@@ -176,7 +176,7 @@ section .block-about p {
   text-align: center;
   line-height: 1.5;
   color: #4c4c4c;
-  margin-top: 28px;
+  margin-top: 26px;
 }
 
 section .block-about .cheef {
@@ -265,7 +265,7 @@ section .block-about .cheef {
     rgba(255, 255, 255, 0.09) 100%
   );
   background-image: url("../media/background-section-menu.png");
-  padding: 73px 115px 48px 113px;
+  padding: 73px 73px 48px 68px;
 }
 
 .section-menu .container {
@@ -379,18 +379,18 @@ section .block-about .cheef {
 .reviews-content .reviews-text {
   font-family: GentiumBookBasic;
   font-size: 25px;
+  color: #dde0df;
   font-weight: bold;
   line-height: 1.8;
-  color: #dde0df;
-  margin: 18px 83px 0;
   text-align: center;
+  margin: 18px 83px 0;
 }
 
 .reviews-content .reviews-text-second {
   font-family: Lato;
   font-size: 18px;
   color: #ffffff;
-  margin-top: 35px;
+  margin-top: 36px;
 }
 
 /*set section reservation*/
@@ -409,6 +409,7 @@ section .block-about .cheef {
 
 .img-reservation {
   display: flex;
+  align-items: flex-start;
 }
 
 .reservation .img-reservation img:first-child {
@@ -460,14 +461,13 @@ form {
   width: 100%;
   justify-content: center;
   margin-top: 40px;
-  flex-wrap: wrap;
 }
 
 .form-first-column,
 .form-second-column {
   display: flex;
   flex-direction: column;
-  margin: 0 5px;
+  margin: 0 14px;
 }
 
 label {
@@ -525,6 +525,10 @@ footer p {
   margin-top: 18px;
 }
 
+footer .footer-first-column p:last-child {
+  margin-top: 0px;
+}
+
 footer p span {
   font-family: "Open Sans Bold";
 }
@@ -556,9 +560,8 @@ footer .container {
   margin-right: 71px;
 }
 
-.footer-second-column .card {
-  margin-top: 50px;
-  margin-left: 5px;
+.footer-second-column .cards {
+  margin: 50px 0 0 5px;
 }
 
 .cards .fab {
@@ -566,6 +569,9 @@ footer .container {
   margin: 0 5px;
 }
 
+.footer-third-column .social {
+  margin-top: 50px;
+}
 .social .fab {
   color: #ffffff;
   margin: 0px 3px;
@@ -849,6 +855,10 @@ header .mobile-menu {
     width: 105%;
   }
 
+  .section-menu h2 {
+    text-align: center;
+  }
+
   /*set section reviews*/
 
   .reviews {
@@ -877,6 +887,11 @@ header .mobile-menu {
   .reservation {
     padding: 50px 0;
   }
+  .reservation .form-fields {
+    max-width: 500px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
   /*set section footer*/
 
@@ -891,6 +906,14 @@ header .mobile-menu {
 
   footer .container h2 {
     margin-top: 20px;
+  }
+
+  .footer-second-column .cards {
+    margin-top: 15px;
+  }
+
+  .footer-third-column .social {
+    margin-top: 15px;
   }
 }
 
