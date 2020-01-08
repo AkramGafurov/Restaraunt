@@ -458,7 +458,6 @@ form {
 
 .form-fields {
   display: flex;
-  width: 100%;
   justify-content: center;
   margin-top: 40px;
 }
@@ -888,7 +887,7 @@ header .mobile-menu {
     padding: 50px 0;
   }
   .reservation .form-fields {
-    max-width: 510px;
+    max-width: 500px;
     width: 100%;
     flex-wrap: wrap;
   }
