@@ -9,6 +9,9 @@
   background-size: cover;
   background-position: center center;
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 header {
@@ -86,6 +89,7 @@ header .social-header li:first-child {
 .content-promo .container {
   display: flex;
   justify-content: center;
+  margin-bottom: 141px;
 }
 
 .content-item {
@@ -667,7 +671,7 @@ header .mobile-menu {
 
   .promo {
     padding: 0 20px 40px;
-    height: auto;
+    height: 750px;
   }
 
   header .menu ul li:first-child {
@@ -886,9 +890,13 @@ header .mobile-menu {
   .reservation {
     padding: 50px 0;
   }
-  .reservation .form-fields {
-    max-width: 500px;
+
+  .reservation .reservation-content {
+    max-width: 456px;
     width: 100%;
+  }
+
+  .reservation .form-fields {
     flex-wrap: wrap;
   }
 
