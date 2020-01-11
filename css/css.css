@@ -926,6 +926,11 @@ header .mobile-menu {
 }
 
 @media all and (max-width: 413px) and (min-width: 320px) {
+  /*set section promo*/
+  .promo h1 {
+    font-size: 40px;
+  }
+
   /*set section about*/
 
   .about .block-about h2 {
